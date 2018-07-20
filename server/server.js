@@ -25,4 +25,14 @@ app.post('/todos', (req, res) => {
    });
 });
 
+app.get('/todos', (req, res) => {
+    Todo.find().then((todos) => {
+        res.send({todos});
+        // expect(todos.length).toBe(0);
+        // done();
+    }).catch((e) => {
+        res.status(400).send(e);
+    });
+})
+
 module.exports = {app};
