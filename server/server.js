@@ -25,23 +25,4 @@ app.post('/todos', (req, res) => {
    });
 });
 
-// // var newTodo = new Todo({
-// //     text: 'Finish this course  '
-// // });
-
-// // newTodo.save().then((doc) => {
-// //     console.log('Saved todo', doc);
-// // }, (e) => {
-// //     console.log('Unable to save todo', e);
-// // });
-
-
-// var newUser = new User({
-//     email: 'alkirerica@gmail.com'
-// });
-
-// newUser.save().then((doc) => {
-//     console.log('User created', doc);
-// }, (e) => {
-//     console.log('Unable to create user', e);
-// })
+module.exports = {app};
